@@ -1,7 +1,7 @@
 			Social Quest - Featurelist
 
-Socialfeatures:
-01. Accountcreation											:TODO
+Social features:
+01. Account creation											:TODO
 02. Add friends and put them into groups								:TODO
 03. Send private messages										:TODO
 04. Post what you do (blog)										:TODO
@@ -10,7 +10,7 @@ Socialfeatures:
 07. Newspage with the last posts off the Users you are following					:TODO
 08. Write comments to posts										:TODO
 
-Questfeatures:
+Quest features:
 01. Create your own avatar										:TODO
 02. Leveling your avatar										:TODO
 03. Get XP through fighting and social interactions							:TODO
