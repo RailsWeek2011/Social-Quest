@@ -1,5 +1,12 @@
 SocialQuest::Application.routes.draw do
-  devise_for :users
+
+  devise_for :users,
+ 	     :controllers => {
+		:registrations => 'my_devise/registrations'	
+	     }	do
+			get "users" => "my_devise/registrations#index", :as => :users
+			get "users/:id/" => "my_devise/registrations#show", :as => :user
+		end
 
   #resources :comments
 
@@ -9,7 +16,7 @@ SocialQuest::Application.routes.draw do
    resources :comments
   end
 
- root :to => "posts#index"
+
 
 
   # The priority is based upon order of creation:

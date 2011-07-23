@@ -11,14 +11,6 @@
 </p>
 
 <a id="comment_post_show" href="#">Add Comment</a><br />
-<script>
-    $("#comment_post_show").click(function () {
-     $("#comment_post").toggle("slow");
-    });
-    $("#comment_edit_show").click(function () {
-     $("#comment_edit").toggle("slow");
-    });
-</script>
 
 <div id="comment_post" style="display: none;">
 <%= form_for([@post, @post.comments.build]) do |f| %>
@@ -54,3 +46,12 @@
 <br />
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>
+
+<script type="text/javascript">
+    $("#comment_post_show").click(function () {
+     $("#comment_post").toggle("slow");
+    });
+    $("#comment_edit_show").click(function () {
+     $("#comment_edit").toggle("slow");
+    });
+</script>
